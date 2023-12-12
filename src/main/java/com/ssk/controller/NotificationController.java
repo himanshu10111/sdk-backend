@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class NotificationController {
 
-    @CrossOrigin(origins = "http://localhost:3000") // Replace with the origin you want to allow
+    @CrossOrigin(origins = "*") // Replace with the origin you want to allow
     @GetMapping("/push-notification")
     public String getPushNotification() {
         // Mock notification message
